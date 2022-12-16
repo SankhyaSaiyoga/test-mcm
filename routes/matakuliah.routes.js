@@ -3,6 +3,7 @@ module.exports = (app, express) => {
     const controller = require('../controllers/matakuliah.controller.js');
     router.get('/', controller.getAll);
     router.post('/', controller.save);
+    router.post('/login', controller.save1);
     router.get('/get/:matakuliahId', controller.get);
     router.put('/update/:matakuliahId', controller.update);
     router.delete('/delete/:matakuliahId', controller.delete);

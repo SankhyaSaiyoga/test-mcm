@@ -1,14 +1,14 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const matakuliah = sequelize.define('matakuliah', {
-    nama: DataTypes.STRING,
+    matakuliah: DataTypes.STRING,
     mahasiswa_id: DataTypes.INTEGER
   }, {
     tableName: 'matakuliahs'
   });
   matakuliah.associate = function(models) {
-    // script dibawah ini artinya kita membuat model mahasiswa ber-relasi dengan model prodi. status model mahasiswa disini adalah belongsTo yang artinya data prodi_id itu berasal dari model prodi dan dihubungkan melalui mahasiswa.prodi_id = prodi.id
-    // kemudian kalau kita inisialisasi data prodi_id tersebut dengan nama field prodi
+    // script dibawah ini artinya kita membuat model matakuliah ber-relasi dengan model mahasiswa. status model matakuliah disini adalah belongsTo yang artinya data mahasiswa_id itu berasal dari model mahasiswa dan dihubungkan melalui matakuliah.mahasiswa_id = mahasiswa.id
+    // kemudian kalau kita inisialisasi data mahasiswa_id tersebut dengan nama field mahasiswa
     matakuliah.belongsTo(models.mahasiswa, {
       foreignKey: 'mahasiswa_id',
       as: 'mahasiswas'
