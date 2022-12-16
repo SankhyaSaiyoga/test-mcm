@@ -5,7 +5,7 @@
 * [Migrate Database]
 * [Update scripts pada package.json]
 * [Jalankan Nodemon]
-* [Menambah Headers untuk JSON web Token]
+* [(Security)Menambah Headers untuk JSON web Token]
 
 ## Create Database
 
@@ -66,6 +66,7 @@ Jalankan nodemon untuk menjalankan server.
 nodemon
 ```
 
+## Security
 
 ### Menambah Headers untuk JSON web TOken
 
