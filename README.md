@@ -88,7 +88,9 @@ Silahkan tambahkan "content-type" : "application/json" dan "bearer" : yang beris
 Setelah berhasil menginputkan token key pada Headers Bearer maka 
 akan berhasil untuk create data matakuliah.
 
-# NOTE
+
+
+## NOTE
 
 Memeberi security hanya dilakukan pada saat user meng-create data matakuliah, secure dilakukan dengan menggunakan token yang expire selama 30 menit.
 Dengan menginputkan token pada Headers => bearer, user akan dapat meng-create matakuliah dan id mahasiswa yang mengambil matakuliah tersebut. 
